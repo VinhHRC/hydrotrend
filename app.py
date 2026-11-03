@@ -102,7 +102,7 @@ if df_all is None:
 # ------------------------------------------------------------------------------
 st.sidebar.image("https://img.icons8.com/fluency/96/water.png", width=60)
 st.sidebar.title("Bảng Điều Khiển")
-st.sidebar.caption("Đề tài KC08.15/21-30")
+st.sidebar.caption("Sản phẩm của Đề tài KC08.15/21-30")
 
 selected_river = st.sidebar.selectbox("1. Chọn Lưu vực sông", list(STATION_MAP.keys()))
 selected_station_name = st.sidebar.selectbox("2. Chọn Trạm Thủy văn", list(STATION_MAP[selected_river].keys()))
@@ -139,7 +139,7 @@ df_filtered = df_station[(df_station['Year'] >= start_yr) & (df_station['Year'] 
 # ------------------------------------------------------------------------------
 # 5. TIÊU ĐỀ CHÍNH & METRIC CARDS
 # ------------------------------------------------------------------------------
-st.title("🌊 Phân Tích Xu Thế Mực Nước & Biến Động Dòng Chảy Hạ Du")
+st.title("🌊 Phân tích Xu thế Mực nước & Biến động Dòng chảy Hạ du các sông ven biển Nam Trung Bộ")
 st.markdown(f"**Lưu vực:** `{selected_river}` | **Trạm quan trắc:** `{selected_station_name}` | **Giai đoạn:** `{start_yr} – {end_yr}` ({len(df_filtered):,} ngày quan sát)")
 
 # Tính toán đặc trưng năm
@@ -381,7 +381,7 @@ with tab4:
 # ------------------------------------------------------------------------------
 st.markdown("---")
 st.caption(
-    "Tác giả: Hoàng Đức Vinh - Phòng TNTĐQG về động lực học sông biển"
+    "Tác giả: Hoàng Đức Vinh - Phòng TNTĐQG về động lực học sông biển - "
     "Sản phẩm khoa học thuộc Đề tài cấp Nhà nước: "
     "*'Nghiên cứu ảnh hưởng của tình trạng hạ thấp mực nước đến ổn định và vận hành các công trình trên sông vùng hạ du sông chính Nam Trung Bộ và đề xuất các giải pháp khắc phục'* (Mã số: **KC08.15/21-30**)."
 )
