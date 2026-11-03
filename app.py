@@ -139,7 +139,7 @@ df_filtered = df_station[(df_station['Year'] >= start_yr) & (df_station['Year'] 
 # ------------------------------------------------------------------------------
 # 5. TIÊU ĐỀ CHÍNH & METRIC CARDS
 # ------------------------------------------------------------------------------
-st.title("🌊 Phân tích Xu thế Mực nước & Biến động Dòng chảy Hạ du các sông ven biển Nam Trung Bộ")
+st.title("🌊 Phân tích xu thế mực nước & biến động dòng chảy hạ du các sông ven biển Nam Trung Bộ")
 st.markdown(f"**Lưu vực:** `{selected_river}` | **Trạm quan trắc:** `{selected_station_name}` | **Giai đoạn:** `{start_yr} – {end_yr}` ({len(df_filtered):,} ngày quan sát)")
 
 # Tính toán đặc trưng năm
